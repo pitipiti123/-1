@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string name,password,agpassword;
+	cout<<“登录”<<endl;
+	cout<<"如果没有账号，请先注册"<<endl;
+	cout<<"请输入用户名/邮箱：";
+	cin>>name;
+	cout<<"请输入密码：";	
+	cin>>password;
+	cout<<"确认密码：";
+	cin>>agpassword;
+
+	if(password==agpassword)
+	{
+		cout<<"注册成功"<<endl;
+		cout<<"请登录";
+		string username,password1;
+		cout<<"请输入用户名/邮箱：";
+		cin>>username;
+		cout<<"请输入密码：";
+		cin>>password1;
+		if(username==name and password1==password)
+		{
+			cout<<"登陆成功";
+		}
+		else
+		{
+			cout<<"登陆成功";
+		} 
+	}
+	else
+	{
+		cout<<"第二次密码错误，请重新输入"<<endl;
+	}
+    return 0;
+}
